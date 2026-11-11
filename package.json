@@ -1,0 +1,22 @@
+{
+  "name": "gamerpraise-session",
+  "version": "2.0.0",
+  "description": "WhatsApp session generator (pair code + QR) for Baileys bots",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "postinstall": "node patch.js"
+  },
+  "author": "Yasir",
+  "license": "MIT",
+  "dependencies": {
+    "@whiskeysockets/baileys": "latest",
+    "express": "^4.21.2",
+    "pino": "^9.5.0",
+    "qrcode": "^1.5.4"
+  }
+}
